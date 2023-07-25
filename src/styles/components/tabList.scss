@@ -7,24 +7,27 @@
 
 .lstTab {
   display: flex;
+  margin-top: 50px;
 
   div {
-    height: 73px;
+    height: 50px;
+    width: 25%;
     padding: 0 15px 0 15px;
     text-align: center;
-    line-height: 73px;
-    background-color: $borderColor;
-    font-size: $large-font;
+    line-height: 50px;
+    font-size: $medium-font;
+    background-color: $backgroundColor;
     font-weight: 700;
-    color: $MainColor;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    color: #cacaca;
     cursor: pointer;
     @include mobile {
       font-size: $small-font;
     }
   }
+  .tab:hover {
+    background-color: $hoverColor;
+  }
   .activeTab {
-    background-color: $whiteColor;
+    border-bottom: 5px solid $pinkColor;
   }
 }

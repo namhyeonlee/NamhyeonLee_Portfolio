@@ -13,7 +13,7 @@ const TabList = ({ titles, children }: ITab) => {
     <>
       <div className="lstTab">
         {titles.map((title, i) => (
-          <div key={`tab - ${i}`} className={selectedTab === i ? "activeTab   " : ""} onClick={() => setSelectedTab(i)}>
+          <div key={`tab - ${i}`} className={selectedTab === i ? "tab activeTab" : "tab"} onClick={() => setSelectedTab(i)}>
             {title}
           </div>
         ))}

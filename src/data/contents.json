@@ -1,0 +1,22 @@
+{
+  "feedContents": [
+    {
+      "id": "feed1",
+      "date": "• 25 Jul 2023",
+      "tag": ["🌴 Feelin' fresh", "🙌🏻 Sydney"],
+      "title": "Hello World! Hello Sydney!",
+      "content": "I am a 2nd-year developer who recently moved to Sydney. I am a hardworking and diligent individual. Additionally, I find great joy in developing and creating something with code.",
+      "img": "feed2",
+      "like": false
+    },
+    {
+      "id": "feed2",
+      "date": "• 25 Jul 2023",
+      "tag": ["🌴 Feelin' fresh", "🙌🏻 Sydney"],
+      "title": "Hello Sydney",
+      "content": "I am a 2nd-year developer who recently moved to Sydney. I am a hardworking and diligent individual. Additionally, I find great joy in developing and creating something with code.",
+      "img": "feed4",
+      "like": false
+    }
+  ]
+}
