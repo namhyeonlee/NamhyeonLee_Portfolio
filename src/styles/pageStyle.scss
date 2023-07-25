@@ -1,0 +1,185 @@
+@import "styles/variable.scss";
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+
+  .head {
+    display: flex;
+    align-items: center;
+    background-color: $whiteColor;
+    width: 100%;
+    height: 72px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .container {
+    height: 100%;
+    margin: 0 76px 76px 76px;
+
+    .titleWrap {
+      border-bottom: solid 1px $borderColor;
+      padding: 20px 0 20px 0;
+      .title {
+        color: $MainColor;
+        font-size: $medium-font;
+        font-weight: 400;
+      }
+    }
+
+    .contents {
+      margin-top: 15px;
+
+      .contentWrap {
+        background-color: $whiteColor;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 20px;
+
+        .card {
+          border: solid 1px $borderColor;
+          border-radius: 10px;
+          margin-bottom: 15px;
+          .cardWrap {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            @include mobile {
+              display: block;
+            }
+
+            .cardLeft {
+              width: 48%;
+              @include mobile {
+                width: 96%;
+              }
+              .cardContent {
+                margin-bottom: 15px;
+              }
+              .title {
+                color: $MainColor;
+                font-size: $large-font;
+                font-weight: 700;
+                @include mobile {
+                  font-size: $small-font;
+                }
+              }
+              .titleBox {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .subTitleWrap {
+                  display: flex;
+                  align-items: center;
+                  .subTitle {
+                    color: $MainColor;
+                    font-size: $small-font;
+                    font-weight: 500;
+                  }
+                  a {
+                    display: flex;
+                    align-items: center;
+                  }
+                }
+              }
+              input[type="text"] {
+                width: 96%;
+                font-size: $small-font;
+                border: solid 1px $inputBorderColor;
+                border-radius: 5px;
+                outline: none;
+                padding: 10px;
+              }
+              .inputWrap {
+                margin-bottom: 5px;
+                position: relative;
+                .removeIcon {
+                  display: block;
+                  position: absolute;
+                  right: -30px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+            .cardRight {
+              width: 48%;
+              display: flex;
+              justify-content: space-between;
+
+              @include mobile {
+                width: 100%;
+              }
+
+              .title {
+                color: $MainColor;
+                font-size: $large-font;
+                font-weight: 700;
+                margin-bottom: 15px;
+                @include mobile {
+                  font-size: $small-font;
+                }
+              }
+              .startDate {
+                width: 49%;
+              }
+              .endDate {
+                width: 49%;
+              }
+            }
+          }
+          .btnWrap {
+            padding: 20px;
+            display: flex;
+            justify-content: right;
+
+            .delBtn {
+              border-color: $redColor;
+              color: $redColor;
+              font-size: $small-font;
+              margin-right: 10px;
+              width: 86px;
+              height: 43px;
+              padding: 11px, 21px, 11px, 21px;
+            }
+            .updateBtn {
+              background-color: $MainColor;
+              color: $whiteColor;
+              font-size: $small-font;
+              margin-right: 10px;
+              width: 86px;
+              height: 43px;
+              padding: 11px, 21px, 11px, 21px;
+            }
+          }
+        }
+      }
+      .addBtnWrap {
+        display: flex;
+        justify-content: right;
+        margin-top: 15px;
+        .addBtn {
+          background-color: $MainColor;
+          color: $whiteColor;
+          font-size: $small-font;
+          margin-right: 10px;
+          width: 165px;
+          height: 43px;
+          padding: 11px, 21px, 11px, 21px;
+        }
+      }
+    }
+  }
+}

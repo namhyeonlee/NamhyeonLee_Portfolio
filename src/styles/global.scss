@@ -1,0 +1,82 @@
+@import "styles/variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Square+Peg&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  color: $subColor;
+  background: $backgroundColor;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+legend {
+  display: none;
+}
+em,
+address {
+  font-style: normal;
+  font-weight: normal;
+}
+button {
+  cursor: pointer;
+  border: 0;
+}
+img {
+  vertical-align: top;
+  border: 0;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:hover,
+a:active:hover,
+a:focus:hover,
+a:link:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+.Toastify {
+  font-size: $small-font;
+  top: 0;
+}
